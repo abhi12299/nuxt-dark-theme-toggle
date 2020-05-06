@@ -6,3 +6,8 @@
   --font-color: #ffffff;
   --bg-color: #000000;
 }
+
+body {
+  background-color: var(--bg-color);
+  transition: background-color 0.25s ease-in;
+}
