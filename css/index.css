@@ -1,0 +1,8 @@
+.theme-light {
+  --font-color: #000000;
+  --bg-color: #ffffff;
+}
+.theme-dark {
+  --font-color: #ffffff;
+  --bg-color: #000000;
+}

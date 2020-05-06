@@ -1,5 +1,6 @@
 const express = require('express')
 const consola = require('consola')
+const cookieParser = require('cookie-parser')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
 
@@ -21,6 +22,7 @@ async function start () {
     await nuxt.ready()
   }
 
+  app.use(cookieParser())
   // Give nuxt middleware to express
   app.use(nuxt.render)
 
